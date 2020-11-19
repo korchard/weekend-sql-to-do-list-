@@ -11,12 +11,12 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 TODO:
 -HTML
-[] input a task
-[] submit button
-[] table to display list and personal info
-[] list on DOM with checkboxes 
-    [] complete
-    [] delete
+[x] input a task
+[x] submit button
+[x] table to display list and personal info
+[x] list on DOM with checkboxes 
+    [x] complete
+    [x] delete
 
 -CLIENT
 [] click handler for submit button
