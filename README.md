@@ -32,10 +32,10 @@ TODO:
     [] needs to remove task from database AND front end (can do the latter by calling the GET function within DELETE request)
 
 -SERVER
-[] install express, jquery, pg
-[] pool.js - create routes
+[x] install express, jquery, pg
+[x] pool.js - create routes
 [] router.js - create routes
-[] server.js - create routes
+[x] server.js - create routes
 
 -SQL
 [x] table will include:
