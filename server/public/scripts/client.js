@@ -5,6 +5,7 @@ $(document).ready(onReady);
 function onReady() {
     console.log(`It's working!`);
     $('#addButton').on('click', addTask);
+    $('#viewList').on('click', '.remove', deleteTask);
     getList();
 }
 
@@ -49,4 +50,19 @@ function renderList(tasks) {
                               <td><button class="remove">Remove</button></td>
                               </tr>`);
     }
+}
+
+function deleteTask() {
+    console.log('Deleting task...');
+    let taskId = $(this).closest('tr').data('id');
+
+    $.ajax({
+        method: 'DELETE',
+        url: `/tasks/${taskId}` 
+    }).then( function(response) {
+        getList();
+    }).catch(function(error) {
+        console.log('Grrrrr...', error);
+        alert('No bueno! There is an ERROR!');
+    })
 }

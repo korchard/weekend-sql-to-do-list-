@@ -48,7 +48,7 @@ todoRouter.post('/', (req, res) => {
 })*/
 
 // DELETE
-/*todoRouter.delete('/:taskId', (req, res) => {
+todoRouter.delete('/:taskId', (req, res) => {
     let id = req.params.taskId;
     let sqlText = `DELETE FROM "tasks" WHERE id=$1;`
     pool.query(sqlText, [id]) 
@@ -59,6 +59,6 @@ todoRouter.post('/', (req, res) => {
             console.log('Error from db...', error);
             res.sendStatus(500);
         })
-})*/
+})
 
 module.exports = todoRouter;

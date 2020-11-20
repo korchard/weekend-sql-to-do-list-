@@ -19,17 +19,17 @@ TODO:
     [x] delete
 
 -CLIENT
-[] click handler for submit button
-[] GET
-    [] append the list to the DOM
+[x] click handler for submit button
+[x] GET
+    [x] append the list to the DOM
     [] needs to be called in POST, UPDATE, AND DELETE, as well as onReady
-[] POST
-    [] Store info from created task/submit button handler into database
+[x] POST
+    [x] Store info from created task/submit button handler into database
 [] UPDATE
     [] when a task is completed, it needs to be visually displayed differently - using css
     [] needs to update the database when task is complete
-[] DELETE
-    [] needs to remove task from database AND front end (can do the latter by calling the GET function within DELETE request)
+[x] DELETE
+    [x] needs to remove task from database AND front end (can do the latter by calling the GET function within DELETE request)
 
 -SERVER
 [x] install express, jquery, pg
