@@ -6,7 +6,7 @@ const pool = require('../modules/pool');
 
 // GET
 todoRouter.get('/', (req, res) => {
-    let sqlText = `SELECT * FROM "tasks" ORDER BY "status";`;
+    let sqlText = `SELECT * FROM "tasks" ORDER BY "task";`;
     pool.query(sqlText)
         .then((result) => {
             res.send(result.rows);
@@ -34,9 +34,16 @@ todoRouter.post('/', (req, res) => {
 
 // PUT
 todoRouter.put('/:id', (req, res) => {
-    let task = req.body.status;
+    let task = req.body.taskStatus;
     let id = req.params.id;
-    let sqlText = `UPDATE "tasks" SET "status"='Completed' WHERE id=$1;`;
+    let sqlText = ``;
+
+    console.log('in router', task, id);
+    if (task === 'Completed') {
+        sqlText = `UPDATE "tasks" SET "status"='Incomplete' WHERE id=$1;`;
+    } else {
+        sqlText = `UPDATE "tasks" SET "status"='Completed' WHERE id=$1;`;
+    }
     
     pool.query(sqlText, [id])
     .then((result) => {

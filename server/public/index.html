@@ -11,19 +11,27 @@
         <link rel="stylesheet" href=styles/bootstrap.min.css>
         <link rel="stylesheet" href="styles/style.css">
     </head>
-    <body>
-        <header>
+    <body class="container-xl">
+        <header class="jumbotron">
             <h2>Weekend To Do List</h2>
+            <h4>DATE GOES HERE</h4>
         </header>
         <main>
-            <section>
-                <label for="task">Task</label>
+            <!---<section>
                 <input type="text" id="inTask" placeholder="task to do">
-                <button type="button" id="addButton">Add to List</button>
-            </section>
-            <table>
-                <thead>
+                <button type="button" id="addButton" class="btn btn-outline-info"d>Add to List</button>
+            </section>--->
+            <div class="input-group mb-3">
+                <input id="inTask" type="text" class="form-control" placeholder="task to do" aria-label="task to do" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-info" type="button" id="addButton">Add to List</button>
+                </div>
+              </div>
+            <section>
+            <table class="table table table-hover">
+                <thead class="thead-dark" id="teal">
                   <tr>
+                    <th>&nbsp;</th>
                     <th>Task</th>
                     <th>Status</th>
                     <th>&nbsp;</th>
@@ -32,6 +40,7 @@
                 <tbody id="viewList">
                 </tbody>
               </table>
+            </section>
         </main>
     </body>
 </html>

@@ -8,6 +8,7 @@ function onReady() {
     $('#viewList').on('click', '.remove', deleteTask);
     $('#viewList').on('click', '.update', changeStatus);
     getList();
+    //toggleButton();
 }
 
 function addTask() {
@@ -45,11 +46,11 @@ function getList() {
 function renderList(tasks) {
     $('#viewList').empty();
     for (let item of tasks) {
-        $('#viewList').append(`<tr id="row-${item.id}" data-id="${item.id}">
-                            <td><button class="update">&#x2713</button></td>
+        $('#viewList').append(`<tr id="row-${item.id}" data-id="${item.id}" data-status="${item.status}">
+                            <td><button class="update btn btn-outline-info" id="toggle-two">&#x2713</button></td>
                             <td>${item.task}</td>
                             <td>${item.status}</td>
-                            <td><button class="remove">Remove</button></td>
+                            <td><button class="remove btn btn-outline-info">Remove</button></td>
                             </tr>`);
 
         if (item.status === 'Completed') {
@@ -77,13 +78,15 @@ function deleteTask() {
 
 function changeStatus() {
     let taskId = $(this).closest('tr').data('id');
-    
+    let taskStatus = $(this).closest('tr').data('status');
+
+    console.log('this is taskstatus', taskStatus);
     console.log(`Changing status to complete for ${taskId}...`);
     
     $.ajax({
         method: 'PUT',
         url: `/tasks/${taskId}`,
-        data: taskId
+        data: {taskStatus: taskStatus}
     }).then(function(response) {
         getList();
     }).catch(function(error) {
@@ -91,5 +94,3 @@ function changeStatus() {
         alert('No bueno! There is an ERROR!');
     })
 }
-
-
