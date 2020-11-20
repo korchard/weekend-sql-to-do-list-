@@ -33,7 +33,7 @@ todoRouter.post('/', (req, res) => {
 })
 
 // PUT
-/*todoRouter.put('/:id', (req, res) => {
+todoRouter.put('/:id', (req, res) => {
     let task = req.body;
     let id = req.params.id;
     let sqlText = `UPDATE "tasks" SET "status"='Complete' WHERE id=$1;`;
@@ -45,7 +45,7 @@ todoRouter.post('/', (req, res) => {
         res.sendStatus(500);
     }) 
     console.log(`Updating task ${id} with`, task);
-})*/
+})
 
 // DELETE
 todoRouter.delete('/:taskId', (req, res) => {

@@ -6,6 +6,7 @@ function onReady() {
     console.log(`It's working!`);
     $('#addButton').on('click', addTask);
     $('#viewList').on('click', '.remove', deleteTask);
+    $('#viewList').on('click', '.update', changeStatus);
     getList();
 }
 
@@ -47,6 +48,7 @@ function renderList(tasks) {
       $('#viewList').append(`<tr data-id="${item.id}">
                               <td>${item.task}</td>
                               <td>${item.status}</td>
+                              <td><button class="update">Done</button></td>
                               <td><button class="remove">Remove</button></td>
                               </tr>`);
     }
@@ -60,9 +62,26 @@ function deleteTask() {
         method: 'DELETE',
         url: `/tasks/${taskId}` 
     }).then( function(response) {
+        getList(response);
+    }).catch(function(error) {
+        console.log('Grrrrr...', error);
+        alert('No bueno! There is an ERROR!');
+    })
+}
+
+function changeStatus() {
+    let taskId = $(this).closest('tr').data('id');
+    console.log(`Changing status to complete for ${taskId}...`);
+    
+    $.ajax({
+        method: 'PUT',
+        url: `/tasks/${taskId}`,
+        data: taskId
+    }).then(function(response) {
         getList();
     }).catch(function(error) {
         console.log('Grrrrr...', error);
         alert('No bueno! There is an ERROR!');
     })
 }
+

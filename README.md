@@ -25,9 +25,9 @@ TODO:
     [] needs to be called in POST, UPDATE, AND DELETE, as well as onReady
 [x] POST
     [x] Store info from created task/submit button handler into database
-[] UPDATE
-    [] when a task is completed, it needs to be visually displayed differently - using css
-    [] needs to update the database when task is complete
+[x] UPDATE
+    [x] when a task is completed, it needs to be visually displayed differently - using css
+    [x] needs to update the database when task is complete
 [x] DELETE
     [x] needs to remove task from database AND front end (can do the latter by calling the GET function within DELETE request)
 
