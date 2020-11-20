@@ -22,7 +22,7 @@ TODO:
 [x] click handler for submit button
 [x] GET
     [x] append the list to the DOM
-    [] needs to be called in POST, UPDATE, AND DELETE, as well as onReady
+    [x] needs to be called in POST, UPDATE, AND DELETE, as well as onReady
 [x] POST
     [x] Store info from created task/submit button handler into database
 [x] UPDATE
@@ -44,7 +44,7 @@ TODO:
     [x] database name = `weekend-to-do-app`
 
 -STRETCHES
-   []  Add Bootstrap to the front end and style it up!
+   [x]  Add Bootstrap to the front end and style it up!
       []  Buttons -- make the creation buttons and completion buttons green and the delete red.
       []  Inputs -- make your text inputs styled in the bootstrap way
       []  Responsive -- make your app responsive to different screen sizes -- check out the [Layout](https://getbootstrap.com/docs/4.1/layout/overview/) section

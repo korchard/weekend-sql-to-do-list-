@@ -45,12 +45,18 @@ function getList() {
 function renderList(tasks) {
     $('#viewList').empty();
     for (let item of tasks) {
-        $('#viewList').append(`<tr data-id="${item.id}">
-                              <td>${item.task}</td>
-                              <td>${item.status}</td>
-                              <td><button class="update">Done</button></td>
-                              <td><button class="remove">Remove</button></td>
-                              </tr>`);
+        $('#viewList').append(`<tr id="row-${item.id}" data-id="${item.id}">
+                            <td><button class="update">&#x2713</button></td>
+                            <td>${item.task}</td>
+                            <td>${item.status}</td>
+                            <td><button class="remove">Remove</button></td>
+                            </tr>`);
+
+        if (item.status === 'Completed') {
+            $(`#row-${item.id}`).addClass('completed');
+        } else {
+            $(`#row-${item.id}`);
+        }
     }
 }
 
@@ -71,7 +77,7 @@ function deleteTask() {
 
 function changeStatus() {
     let taskId = $(this).closest('tr').data('id');
-    //$(this).closest('tr').addClass('completed');
+    
     console.log(`Changing status to complete for ${taskId}...`);
     
     $.ajax({
@@ -85,4 +91,5 @@ function changeStatus() {
         alert('No bueno! There is an ERROR!');
     })
 }
+
 

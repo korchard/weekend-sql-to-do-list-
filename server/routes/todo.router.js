@@ -34,9 +34,10 @@ todoRouter.post('/', (req, res) => {
 
 // PUT
 todoRouter.put('/:id', (req, res) => {
-    let task = req.body;
+    let task = req.body.status;
     let id = req.params.id;
-    let sqlText = `UPDATE "tasks" SET "status"='Complete' WHERE id=$1;`;
+    let sqlText = `UPDATE "tasks" SET "status"='Completed' WHERE id=$1;`;
+    
     pool.query(sqlText, [id])
     .then((result) => {
         res.sendStatus(200);
