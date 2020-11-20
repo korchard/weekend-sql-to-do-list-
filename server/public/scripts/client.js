@@ -8,7 +8,7 @@ function onReady() {
     $('#viewList').on('click', '.remove', deleteTask);
     $('#viewList').on('click', '.update', changeStatus);
     getList();
-    //toggleButton();
+    date();
 }
 
 function addTask() {
@@ -93,4 +93,10 @@ function changeStatus() {
         console.log('Grrrrr...', error);
         alert('No bueno! There is an ERROR!');
     })
+}
+
+function date() {
+    let date = moment().format('MM/DD/YYYY');
+    console.log('indate', date);
+    //document.getElementById('date').innerHTML = date.format('MM/DD/YYYY');
 }
