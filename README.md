@@ -34,7 +34,7 @@ TODO:
 -SERVER
 [x] install express, jquery, pg
 [x] pool.js - create routes
-[] router.js - create routes
+[x] router.js - create routes
 [x] server.js - create routes
 
 -SQL
