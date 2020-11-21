@@ -1,8 +1,5 @@
 .completed {
     background-color: rgb(152, 186, 192);
-}
-
-.completed:td-nth-child(2) {
     text-decoration: line-through;
 }
 

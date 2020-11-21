@@ -47,8 +47,8 @@ TODO:
 -------------------------------------------------
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![REPO SIZE](https://img.shields.io/github/repo-size/korchard/weekend-sql-to-do-list-.svg?style=flat-square)
-![TOP_LANGUAGE](https://img.shields.io/github/languages/top/korchard/weekend-sql-to-do-list-.svg?style=flat-square)
+![REPO SIZE](https://img.shields.io/github/repo-size/korchard/weekend-sql-to-do-list-?style=flat-square)
+![TOP_LANGUAGE](https://img.shields.io/github/languages/top/korchard/weekend-sql-to-do-list-?style=flat-square)
 ![FORKS](https://img.shields.io/github/forks/korchard/weekend-sql-to-do-list-.svg?style=social)
 
 # PROJECT NAME
@@ -63,13 +63,13 @@ This is a 'TO DO' application that allows the user to create a task, which is ad
 
 ## Screen Shot
 
-Include one or two screen shots of your project here (optional). Remove if unused.
+![to do list](./server/image/ss.png)
 
 ### Prerequisites
 
 Link to software that is required to install the app (e.g. node).
 
-- [Node.js](https://nodejs.org/en/)
+- [Node.js] - install in terminal
 - [express] - install in terminal
 - [postgres] - install in terminal
 - [moment] - install in terminal
@@ -109,11 +109,15 @@ List technologies and frameworks here
 - postgres
 
 ## License
-![MIT LICENSE](https://img.shields.io/github/license/korchard/weekend-sql-to-do-list-.svg?style=flat-square)
-[MIT](https://choosealicense.com/licenses/mit/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Acknowledgement
-Thank you to Josie, for being my coding buddy. Thank you to Steven for supporting me as well. My Vatti team this week, thank you to Brady and Julian, and again, Josie for working through this process together. Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. 
+Thank you to Josie, for being my coding buddy. Thank you to Steven and James for supporting me and answering my questions as well. My Vatti team this week, thank you to Brady and Julian, and again, Josie for working through this process together. Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. Special thanks to my primary instructor, [Mary Mossman](https://github.com/mbMosman)
+-[Josie Fredericksen](https://github.com//freder48)
+-[Brady Baker](https://github.com//bradybaker)
+-[Julian Booher](https://github.com//julianbooher)
+-[Steven Maloney](https://github.com//sdeda1us)
+-[James Posey](https://github.com//jposeyjr)
 
 ## Support
 If you have suggestions or issues, please reach out to me on linkedIn [https://www.linkedin.com/in/kimberly-orchard-she-her/]
