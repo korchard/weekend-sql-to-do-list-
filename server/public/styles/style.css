@@ -1,8 +1,5 @@
 .completed {
     background-color: rgb(152, 186, 192);
-}
-
-#crossOut {
     text-decoration: line-through;
 }
 

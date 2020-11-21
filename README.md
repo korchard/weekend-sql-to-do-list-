@@ -51,7 +51,7 @@ TODO:
 
 [] are you sure button with sweet alert
 []  Research [Query Params](https://expressjs.com/en/api.html#req.query) to have the request reverse the order of the returned todos. 
-[]  Add the ability to record when a task was completed. Show the completed date on the frontend in a pretty format.
-    [] use express express with train stuff for this one
+[x]  Add the ability to record when a task was completed. Show the completed date on the frontend in a pretty format.
+    [x] use express express with train stuff for this one
 
 
