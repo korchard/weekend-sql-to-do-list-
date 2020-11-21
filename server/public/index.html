@@ -8,13 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="vendors/jquery.min.js"></script>
         <script src="scripts/client.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <link rel="stylesheet" href=styles/bootstrap.min.css>
         <link rel="stylesheet" href="styles/style.css">
     </head>
-    <body class="container-xl">
+    <body class="container-fluid">
         <header class="jumbotron">
             <h2>...things to do...</h2>
-            <h4><span id="date"></span></h4>
+            <h4 class="font-weight-bold"><span id="date"></span></h4>
         </header>
         <main>
             <!---<section>
@@ -33,14 +34,27 @@
                   <tr>
                     <th>&nbsp;</th>
                     <th>Task</th>
-                    <th>&nbsp;</th>
                     <th>Finished</th>
+                    <th>&nbsp;</th>
                   </tr>
                 </thead>
                 <tbody id="viewList">
                 </tbody>
               </table>
             </section>
+            <div class="card text-center">
+              <div class="card-header">
+                Get Motivated!
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ted Talks On How to Get Motivated</h5>
+                <p class="card-text"><a https://www.ted.com/talks?topics%5B%5D=motivation></a></p>
+                <a href="#" class="btn btn-primary">Take Action!</a>
+              </div>
+              <div class="card-footer text-muted">
+                
+              </div>
+            </div>
         </main>
     </body>
 </html>

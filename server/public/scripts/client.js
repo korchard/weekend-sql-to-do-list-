@@ -47,14 +47,14 @@ function renderList(tasks) {
     $('#viewList').empty();
     for (let item of tasks) {
         $('#viewList').append(`<tr id="row-${item.id}" data-id="${item.id}" data-status="${item.status}">
-                            <td><button class="update btn btn-outline-info" id="toggle-two">&#x2713</button></td>
-                            <td>${item.task}</td>
-                            <td><button class="remove btn btn-outline-info">Remove</button></td>
-                            <td>${item.time_completed}</td>
+                            <td class="small"><button class="update btn btn-outline-info" id="toggle-two">&#x2713</button></td>
+                            <td class="large">${item.task}</td>
+                            <td class="medium">${item.time_completed}</td>
+                            <td class="small"><button class="remove btn btn-outline-info">Remove</button></td>
                             </tr>`);
 
         if (item.status === 'Completed') {
-            $(`#row-${item.id}`).addClass('completed');
+            $(`#row-${item.id}`).addClass('completed', 'completed:td-nth-child(2)');
         } else {
             $(`#row-${item.id}`);
         }
@@ -76,16 +76,32 @@ function deleteTask() {
     console.log('Deleting task...');
     let taskId = $(this).closest('tr').data('id');
 
-    $.ajax({
-        method: 'DELETE',
-        url: `/tasks/${taskId}` 
-    }).then( function(response) {
-        getList(response);
-    }).catch(function(error) {
-        console.log('Grrrrr...', error);
-        alert('No bueno! There is an ERROR!');
-    })
+    swal({
+        title: "Are you sure?",
+        text: "Once deleted, you will have to re-add it...",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+      .then((willDelete) => {
+        if (willDelete) {
+          swal("Poof! YOU GOT IT DONE!");
+        
+        $.ajax({
+            method: 'DELETE',
+            url: `/tasks/${taskId}` 
+        }).then( function(response) {
+            getList(response);
+        }).catch(function(error) {
+            console.log('Grrrrr...', error);
+            alert('No bueno! There is an ERROR!');
+        })
+    } else {
+        swal("You can do it! STAY MOTIVATED!");
+    }
+});
 }
+
 
 function changeStatus() {
     let taskId = $(this).closest('tr').data('id');
