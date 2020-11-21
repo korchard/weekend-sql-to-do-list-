@@ -36,7 +36,7 @@ todoRouter.post('/', (req, res) => {
 // PUT
 todoRouter.put('/:id', (req, res) => {
     let task = req.body.taskStatus;
-    let id = req.params.id;
+    let id = req.params.id; // params are the instructions of what to do with the data 
     let sqlText = ``;
     let time = moment().format('lll');
     let remove = ``;

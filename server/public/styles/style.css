@@ -47,3 +47,7 @@ table {
 .large {
     width: 55%;
 }
+
+.card {
+    text-align: center;
+}
