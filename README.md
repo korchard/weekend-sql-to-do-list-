@@ -1,13 +1,3 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
-
-## Description
-
-Your project description goes here. What problem did you solve? How did you solve it?
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
-
 
 TODO:
 -HTML
@@ -56,8 +46,7 @@ TODO:
 
 -------------------------------------------------
 
-
-![MIT LICENSE](https://img.shields.io/github/license/korchard/weekend-sql-to-do-list-.svg?style=flat-square)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![REPO SIZE](https://img.shields.io/github/repo-size/korchard/weekend-sql-to-do-list-.svg?style=flat-square)
 ![TOP_LANGUAGE](https://img.shields.io/github/languages/top/korchard/weekend-sql-to-do-list-.svg?style=flat-square)
 ![FORKS](https://img.shields.io/github/forks/korchard/weekend-sql-to-do-list-.svg?style=social)
@@ -121,9 +110,10 @@ List technologies and frameworks here
 
 ## License
 ![MIT LICENSE](https://img.shields.io/github/license/korchard/weekend-sql-to-do-list-.svg?style=flat-square)
+[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
+Thank you to Josie, for being my coding buddy. Thank you to Steven for supporting me as well. My Vatti team this week, thank you to Brady and Julian, and again, Josie for working through this process together. Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. 
 
 ## Support
 If you have suggestions or issues, please reach out to me on linkedIn [https://www.linkedin.com/in/kimberly-orchard-she-her/]
