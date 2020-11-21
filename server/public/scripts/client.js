@@ -7,6 +7,7 @@ function onReady() {
     $('#addButton').on('click', addTask);
     $('#viewList').on('click', '.remove', deleteTask);
     $('#viewList').on('click', '.update', changeStatus);
+    displayDate();
     getList();
 }
 
@@ -58,6 +59,17 @@ function renderList(tasks) {
             $(`#row-${item.id}`);
         }
     }
+}
+
+function displayDate() {
+    let d = new Date();
+    let DD = d.getDate();
+    let MM = d.getMonth();
+    let YYYY = d.getFullYear();
+    let todayDate = `${MM + 1}/${DD}/${YYYY}`
+   
+    console.log(todayDate);
+    $('#date').append(todayDate);
 }
 
 function deleteTask() {
