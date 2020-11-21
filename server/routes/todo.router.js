@@ -38,21 +38,29 @@ todoRouter.put('/:id', (req, res) => {
     let task = req.body.taskStatus;
     let id = req.params.id;
     let sqlText = ``;
+    let time = moment().format('lll');
+    let remove = ``;
 
     console.log('in router', task, id);
     if (task === 'Completed') {
-        sqlText = `UPDATE "tasks" SET "status"='Incomplete' WHERE id=$1;`;
+        sqlText = `UPDATE "tasks" SET "status"='Incomplete', "time_completed"=$1 WHERE id=$2;`;
+        pool.query(sqlText, [remove, id])
+        .then((result) => {
+            res.sendStatus(200);
+        }).catch((error) => {
+            console.log('Error when changing status...', error)
+            res.sendStatus(500);
+        }) 
     } else {
-        sqlText = `UPDATE "tasks" SET "status"='Completed' WHERE id=$1;`;
+        sqlText = `UPDATE "tasks" SET "status"='Completed', "time_completed"=$1 WHERE id=$2;`;
+        pool.query(sqlText, [time, id])
+        .then((result) => {
+            res.sendStatus(200);
+        }).catch((error) => {
+            console.log('Error when changing status...', error)
+            res.sendStatus(500);
+        }) 
     }
-    
-    pool.query(sqlText, [id])
-    .then((result) => {
-        res.sendStatus(200);
-    }).catch((error) => {
-        console.log('Error when changing status...', error)
-        res.sendStatus(500);
-    }) 
     console.log(`Updating task ${id} with`, task);
 })
 

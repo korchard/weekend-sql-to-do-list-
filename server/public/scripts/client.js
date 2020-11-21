@@ -47,9 +47,9 @@ function renderList(tasks) {
     for (let item of tasks) {
         $('#viewList').append(`<tr id="row-${item.id}" data-id="${item.id}" data-status="${item.status}">
                             <td><button class="update btn btn-outline-info" id="toggle-two">&#x2713</button></td>
-                            <td>${item.time}</td>
                             <td>${item.task}</td>
                             <td><button class="remove btn btn-outline-info">Remove</button></td>
+                            <td>${item.time_completed}</td>
                             </tr>`);
 
         if (item.status === 'Completed') {
