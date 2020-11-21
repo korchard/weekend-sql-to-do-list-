@@ -8,7 +8,6 @@ function onReady() {
     $('#viewList').on('click', '.remove', deleteTask);
     $('#viewList').on('click', '.update', changeStatus);
     getList();
-    //toggleButton();
 }
 
 function addTask() {
@@ -49,8 +48,8 @@ function renderList(tasks) {
         $('#viewList').append(`<tr id="row-${item.id}" data-id="${item.id}" data-status="${item.status}">
                             <td><button class="update btn btn-outline-info" id="toggle-two">&#x2713</button></td>
                             <td>${item.task}</td>
-                            <td>${item.status}</td>
                             <td><button class="remove btn btn-outline-info">Remove</button></td>
+                            <td>${item.time_completed}</td>
                             </tr>`);
 
         if (item.status === 'Completed') {
@@ -94,3 +93,4 @@ function changeStatus() {
         alert('No bueno! There is an ERROR!');
     })
 }
+
