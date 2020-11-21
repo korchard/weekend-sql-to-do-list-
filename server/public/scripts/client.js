@@ -8,7 +8,6 @@ function onReady() {
     $('#viewList').on('click', '.remove', deleteTask);
     $('#viewList').on('click', '.update', changeStatus);
     getList();
-    date();
 }
 
 function addTask() {
@@ -48,8 +47,8 @@ function renderList(tasks) {
     for (let item of tasks) {
         $('#viewList').append(`<tr id="row-${item.id}" data-id="${item.id}" data-status="${item.status}">
                             <td><button class="update btn btn-outline-info" id="toggle-two">&#x2713</button></td>
+                            <td>${item.time}</td>
                             <td>${item.task}</td>
-                            <td>${item.status}</td>
                             <td><button class="remove btn btn-outline-info">Remove</button></td>
                             </tr>`);
 
@@ -95,8 +94,3 @@ function changeStatus() {
     })
 }
 
-function date() {
-    let date = moment().format('MM/DD/YYYY');
-    console.log('indate', date);
-    //document.getElementById('date').innerHTML = date.format('MM/DD/YYYY');
-}
