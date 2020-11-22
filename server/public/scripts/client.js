@@ -55,7 +55,7 @@ function renderList(tasks) { // appends the information to the DOM
 
         if (item.status === 'Completed') { // conditional to toggle between complete and incomplete status and display the change on DOM
             $(`#row-${item.id}`).addClass('completed');
-            $(`tr td:nth-child(2)`).css({'text-decoration': 'line-through'});
+            $(`#row-${item.id} td:nth-child(2)`).css({'text-decoration': 'line-through'});
         } else {
             $(`#row-${item.id}`);
         } // end conditional
