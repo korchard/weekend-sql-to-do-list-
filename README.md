@@ -24,7 +24,7 @@ Link to software that is required to install the app (e.g. node).
 
 - [Node.js] - install in terminal
 - [express] - install in terminal
-- [postgres] - install in terminal
+- [pg] - install in terminal
 - [moment] - install in terminal
 
 ## Installation
@@ -58,7 +58,7 @@ List technologies and frameworks here
 - moment
 - node
 - express
-- postgres
+- pg
 
 ## License
 
