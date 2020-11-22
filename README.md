@@ -1,51 +1,4 @@
 
-TODO:
--HTML
-[x] input a task
-[x] submit button
-[x] table to display list and personal info
-[x] list on DOM with checkboxes 
-    [x] complete
-    [x] delete
-
--CLIENT
-[x] click handler for submit button
-[x] GET
-    [x] append the list to the DOM
-    [x] needs to be called in POST, UPDATE, AND DELETE, as well as onReady
-[x] POST
-    [x] Store info from created task/submit button handler into database
-[x] UPDATE
-    [x] when a task is completed, it needs to be visually displayed differently - using css
-    [x] needs to update the database when task is complete
-[x] DELETE
-    [x] needs to remove task from database AND front end (can do the latter by calling the GET function within DELETE request)
-
--SERVER
-[x] install express, jquery, pg
-[x] pool.js - create routes
-[x] router.js - create routes
-[x] server.js - create routes
-
--SQL
-[x] table will include:
-    [x] task
-    [x] whether or not it is complete
-    [x] database name = `weekend-to-do-app`
-
--STRETCHES
-   [x]  Add Bootstrap to the front end and style it up!
-      [x]  Buttons -- make the creation buttons and completion buttons green and the delete red.
-      [x]  Inputs -- make your text inputs styled in the bootstrap way
-      [x]  Responsive -- make your app responsive to different screen sizes -- check out the [Layout](https://getbootstrap.com/docs/4.1/layout/overview/) section
-
-[x] are you sure button with sweet alert
-[]  Research [Query Params](https://expressjs.com/en/api.html#req.query) to have the request reverse the order of the returned todos. 
-[x]  Add the ability to record when a task was completed. Show the completed date on the frontend in a pretty format.
-    [x] use express express with train stuff for this one
-
--------------------------------------------------
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![REPO SIZE](https://img.shields.io/github/repo-size/korchard/weekend-sql-to-do-list-?style=flat-square)
 ![TOP_LANGUAGE](https://img.shields.io/github/languages/top/korchard/weekend-sql-to-do-list-?style=flat-square)
@@ -57,7 +10,7 @@ WEEKEND SQL TO DO LIST
 
 ## Description
 
-_Duration: 7 hours
+_Duration: 9 hours
 
 This is a 'TO DO' application that allows the user to create a task, which is added and stored in a database. There are options to check the task as completed, to uncheck it, and delete it from the list. 
 
@@ -88,7 +41,6 @@ If your application has secret keys (for example --  Twilio), make sure you tell
 6. Open localhost:5000 in your browswer to use the application.
 
 ## Usage
-How does someone use this application? Tell a user story here.
 
 1. Input your todo tasks into the input box - they will display on the DOM.
 2. When a task is completed, check the marked box on the far left. - There will be a display change to recognize the task has been checked - and the date and time that you have completed the task will display.
@@ -109,9 +61,11 @@ List technologies and frameworks here
 - postgres
 
 ## License
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Acknowledgement
+
 Thank you to Josie, for being my coding buddy. Thank you to Steven and James for supporting me and answering my questions as well. My Vatti team this week, thank you to Brady and Julian, and again, Josie for working through this process together. Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. Special thanks to my primary instructor, [Mary Mossman](https://github.com/mbMosman)
 -[Josie Fredericksen](https://github.com//freder48)
 -[Brady Baker](https://github.com//bradybaker)
@@ -120,5 +74,6 @@ Thank you to Josie, for being my coding buddy. Thank you to Steven and James for
 -[James Posey](https://github.com//jposeyjr)
 
 ## Support
+
 If you have suggestions or issues, please reach out to me on linkedIn [https://www.linkedin.com/in/kimberly-orchard-she-her/]
 

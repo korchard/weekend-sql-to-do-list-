@@ -1,6 +1,5 @@
 .completed {
     background-color: rgb(152, 186, 192);
-    text-decoration: line-through;
 }
 
 .crossOut {
@@ -47,4 +46,8 @@ table {
 
 .card {
     text-align: center;
+}
+
+#alter {
+    background-color: rgb(152, 186, 192);;
 }

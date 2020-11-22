@@ -1,6 +1,6 @@
-const pg = require('pg');
+const pg = require('pg'); // requiring in database
 
-const config = {
+const config = { // providing parameters to the database, as well as identifying database
     database: 'weekend-to-do-app',
     host: 'localhost',
     port: 5432,
@@ -11,7 +11,7 @@ const config = {
 const pool = new pg.Pool(config);
 
 pool.on("connect", () => {
-    console.log("connected to postgres...");
+    console.log("connected to postgres..."); //connects database
 });
 
 pool.on("error", (err) => {
