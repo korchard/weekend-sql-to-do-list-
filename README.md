@@ -55,6 +55,7 @@ List technologies and frameworks here
 - node
 - express
 - pg
+- SQL
 
 ## License
 
