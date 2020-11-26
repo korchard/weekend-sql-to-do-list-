@@ -20,7 +20,7 @@ This is a 'TO DO' application that allows the user to create a task, which is ad
 
 ### Prerequisites
 
-Link to software that is required to install the app (e.g. node).
+Software that is required to install.
 
 - [Node.js] - install in terminal
 - [express] - install in terminal
