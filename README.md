@@ -10,7 +10,7 @@ WEEKEND SQL TO DO LIST
 
 ## Description
 
-_Duration: 9 hours
+_Duration: 10 hours
 
 This is a 'TO DO' application that allows the user to create a task, which is added and stored in a database. There are options to check the task as completed, to uncheck it, and delete it from the list. 
 
