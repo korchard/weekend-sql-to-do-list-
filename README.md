@@ -29,7 +29,7 @@ Software that is required to install.
 
 ## Installation
 
-1. Create a database named `your database name`,
+1. Create a database named `weekend-to-do-app`,
 2. The queries in the `database.sql` file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries, 
 3. Open up your editor of choice and run an `npm install` - this will install `express`, `node.js`, `jQuery`, `moment` and `pg`.
 4. Input in the package.json `"start": "node server/server.js"` - under scripts.
