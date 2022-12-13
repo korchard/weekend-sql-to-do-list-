@@ -20,7 +20,7 @@
   "homepage": "https://github.com/korchard/weekend-sql-to-do-list-#readme",
   "dependencies": {
     "bootstrap": "^4.5.3",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jquery": "^3.5.1",
     "moment": "^2.29.1",
     "pg": "^8.5.1",
